@@ -31,7 +31,7 @@
 		<dependency>
 			<groupId>us.abstracta.jmeter</groupId>
 			<artifactId>jmeter-java-dsl</artifactId>
-			<version>1.29.1</version>
+			<version>1.30</version>
 		</dependency>
 		<dependency>
 			<groupId>us.abstracta.jmeter</groupId>
@@ -62,6 +62,12 @@
 			<artifactId>assertj-core</artifactId>
 			<version>3.24.2</version>
 		</dependency>
+		<!-- https://mvnrepository.com/artifact/us.abstracta.jmeter/jmeter-java-dsl-jmx2dsl -->
+<dependency>
+    <groupId>us.abstracta.jmeter</groupId>
+    <artifactId>jmeter-java-dsl-jmx2dsl</artifactId>
+    <version>1.8</version>
+</dependency>
 	</dependencies>
 
 </project>

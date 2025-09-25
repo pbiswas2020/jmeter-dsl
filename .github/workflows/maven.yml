@@ -35,5 +35,13 @@ jobs:
       with:
         name: jmeter-reports
         path: target/
+    - name: Download and install JMeter
+      run: |
+        curl -L https://archive.apache.org/dist/jmeter/binaries/apache-jmeter-5.6.3.zip -o jmeter.zip
+        unzip jmeter.zip
+        mv apache-jmeter-5.6.3 jmeter
+    - name: Jmx run
+      run: |
+        ./jmeter/bin/jmeter -n -t jmx/herokuApp.jmx -l results.jtl -e -o report_output
 
  
