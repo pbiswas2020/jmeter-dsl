@@ -46,7 +46,7 @@ jobs:
       # Run JMX test plan
       - name: Run JMX Test Plan
         run: |
-          ./jmeter/bin/jmeter -n -t ./jmx/herokuApp.jmx -l results.jtl -e -o report_output
+          ./jmeter/bin/jmeter -n -t jmx/herokuApp.jmx -l results.jtl -e -o report_output
 
       # Upload JMX test results
       - name: Upload JMX Reports
